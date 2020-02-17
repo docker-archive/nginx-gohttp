@@ -1,11 +1,14 @@
 # nginx-gohttp
-Compose app skeleton with two services: frontend and backend. 
-    - frontend - nginx server that will forward requests to the backend (its port 80 is mapped by docker-compose to 8080 on the localhost). To query it, we use the localhost:8080 endpoint.
-    - backend - Go http server which servers an ascii drawing and greeting message.
+Compose app skeleton with two services:
+
+- __frontend__: nginx server that will forward requests to the backend (its port 80 is mapped by 
+    docker-compose to 8080 on the localhost). To query it, we use the localhost:8080 endpoint.
+
+- __backend__: Go http server which servers an ascii drawing and greeting message.
 
 Project structure
 ```$ tree hello-docker
-hello-docker
+.
 ├── backend
 │   ├── Dockerfile
 │   └── main.go
