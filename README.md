@@ -1,8 +1,8 @@
 # nginx-gohttp
 Compose app skeleton with two services:
 
-- __frontend__: nginx server that forwards requests to the backend. Its port 80 is mapped by 
-    docker-compose to 8080 on the localhost
+- __frontend__: nginx server that forwards requests to the backend. Nginx listens on port 80 which is mapped by 
+    docker-compose to 8080 on the localhost.
 
 - __backend__: Go http server which servers an ascii drawing and greeting message
 
@@ -35,7 +35,7 @@ WARNING: Image for service frontend was built because it did not already exist. 
 Creating nginx-gohttp_backend_1 ... done
 Creating nginx-gohttp_frontend_1 ... done
 ```
-Check containers are running
+Check that containers are running
 ```
 $ docker-compose ps
          Name                    Command           State          Ports        
@@ -45,7 +45,7 @@ nginx-gohttp_frontend_1   nginx -g daemon off;     Up      0.0.0.0:8080->80/tcp
 
 ```
 
-The Compose app was deployed successfully if we can query the localhost on port 8080 and get the following messsage
+The Compose app was deployed successfully if a query to localhost:8080 returns the following messsage
 ```
 $ curl localhost:8080
 
