@@ -1,3 +1,5 @@
+This example has been moved to [Awesome Compose](https://github.com/docker/awesome-compose).
+
 # nginx-gohttp
 Compose app skeleton with two services:
 
